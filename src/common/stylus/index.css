@@ -10,6 +10,12 @@
     transform: scaleY(0.5);
   }
 }
+body,
+html {
+  line-height: 1;
+  font-weight: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', Arial, sans-serif;
+}
 @font-face {
   font-family: 'sell-icon';
   src: url("../fonts/sell-icon.eot?6u6oal");
