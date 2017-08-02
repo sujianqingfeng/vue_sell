@@ -16,6 +16,17 @@ html {
   font-weight: 1;
   font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', Arial, sans-serif;
 }
+.clearfix {
+  display: inline-block;
+}
+.clearfix:after {
+  display: block;
+  content: '.';
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
 @font-face {
   font-family: 'sell-icon';
   src: url("../fonts/sell-icon.eot?6u6oal");
