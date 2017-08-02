@@ -42,6 +42,14 @@
       <div class="detail-warpper clearfix">
         <div class="detail-main">
           <h1 class="name">{{seller.name}}</h1>
+          <div class="star">
+            <star :size="48" :score="seller.score"></star>
+          </div>
+          <div class="title">
+            <div class="line"></div>
+            <div class="text"></div>
+            <div class="line"></div>
+          </div>
         </div>
       </div>
       <div class="detail-close">
@@ -51,6 +59,8 @@
   </div>
 </template>
 <script type="text/ecmascript-6">
+  import star from 'components/star/Star'
+
   export default {
     name: 'header',
     props: {
@@ -70,6 +80,9 @@
     },
     created () {
       this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
+    },
+    components: {
+      star
     }
   }
 </script>
@@ -206,6 +219,11 @@
             font-size 16px
             text-align center
             font-weight 700
+          .star
+            margin-top 18px
+            text-align center
+            padding 2px 0
+
 
       .detail-close
         position relative
